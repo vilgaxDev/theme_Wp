@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+
+	<title>GutenVerse - Documentation</title>
+    <link rel="icon" type="image/ico" href="inc/favicon.ico"/>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen, projection">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin:300,400,700|Merriweather:300i,400|Montserrat:400,700|Roboto+Mono" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+			  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+			  crossorigin="anonymous"></script> 
+    <script type='text/javascript' src='inc/jquery-scrolltofixed-min.js'></script>
+</head>
+
+
+<body>
+<div id="container" class="container">
+
+	<header>
+    
+          <h1>GutenVerse</h1>
+          <h2>Theme Documentation</h2>
+          
+          
+          <div class="divider"></div>
+          
+          
+
+      
+          <h4>Hello there...</h4>
+    
+    	<div class="header_left">
+          <p>Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to contact me via Support page. <strong>Thanks so much!</strong></p>
+   	  </div>
+        
+      <div class="header_right">
+
+
+          <p>
+            Created: 26. Jul 2019<br>
+            By: <a href="http://themnific.com/">Dannci  &amp; Themnific</a> | <a target="_blank" href="https://dannci.freshdesk.com/support/solutions/articles/5000167124-support-policy">Support*</a>
+			</p>
+          <small>
+          * Please note, that theme support does not include:</p>
+          <ul>
+            <li><strong>Customization and installation services</strong></li>
+            <li>Support for third party software and plug-ins        </li>
+          </ul>
+ 			</small>
+
+
+          
+      	</div>
+        
+        
+	</header>
+
+    <ol class="navigation">
+      <li><a href="#container">Theme Overview</a></li>
+      <li><a href="#install">Theme Installation </a></li>
+      <li><a href="#setup">Default Setup</a></li>
+
+      <li><a href="#homesetup">Homepage Setup</a>
+        <ul>
+          <li><a href="#builder">Elementor: Full Width Column (for Slider)</a></li>
+          <li><a href="#builder-columns">Elementor: Columns</a></li>
+          <li><a href="#blog">Blog/News Template</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#themesetup">Styling (Admin panel)</a></li>
+      
+      <li><a href="#templates">Custom Templates (Posts, Pages)</a></li> 
+      <li><a href="#formats">Post Settigns</a></li>
+      
+      <li><a href="#widgets">Custom Widgets</a></li>
+      
+      <li><a href="#images">Images</a></li>
+      <li><a href="#custom-menu">Custom Menu</a></li>
+      <li><a href="#plugins">Plugins</a></li>
+      <li><a href="#xml">Demo Import (XML file)</a></li>
+      <li><a href="#translation">Translation</a></li>
+    </ol>
+        
+    <div class="container_inn">
+    
+   	  <h3 id="install">&nbsp;</h3>
+    
+   	  <h3 id="install">Theme Instalation</h3>
+        <h6>Installation via WP Dashboard:</h6>
+        <ol>
+          <li>Unzip/extract the main (downloaded) theme package – to get <code>gutenverse.zip</code> file,</li>
+          <li>Go to Appearance &gt;Themes,</li>
+          <li>click on &ldquo;Add New&rdquo; &gt; and &ldquo;Upload theme&rdquo;,</li>
+          <li>click on &lsquo;Browse&rsquo; button, find <code>gutenverse.zip</code> file on your computer and press 'Install Now',</li>
+          <li>Activate theme,</li>
+          <li><em>Go to Appearance &gt; Install Plugins after theme activation and install and <strong>activate Redux Framework plugin!</strong></em></li>
+          <li>Refresh  page and 'GutenVerse - admin panel' button will appear; </li>
+          <li>Go to GutenVerse - admin panel (theme options) and setup theme.</li>
+        </ol>
+        <p> </p>
+        <h6>Installation via FTP:</h6>
+        <ol>
+          <li>Unzip/extract  the main (downloaded) theme package / twice / to get  theme folder &lsquo;<em>gutenverse</em>&rsquo;,</li>
+          <li>Using FTP client (e.g. Filezilla) upload '<code>gutenverse</code>' folder into '<code>themes</code>' folder in your WordPress installation ( <code>YOUR_HOSTING_ROOT/YOUR_SUBDIRECTORY/wp-content/themes/</code> ),</li>
+          <li>Go to Appearance &gt;Themes, find GutenVerse theme and activate theme,</li>
+          <li><em>Go to Appearance &gt; Install Plugins after theme activation and install and <strong>activate Redux Framework plugin!</strong></em></li>
+          <li>Refresh  page and 'GutenVerse - admin panel' button will appear; </li>
+          <li>Go to  GutenVerse - admin panel (theme options) and setup theme.</li>
+        </ol>
+        <p>&nbsp;</p>
+        <div class="warning">
+        <p>You have to install and activate  <strong>required  plugins</strong> (Redux, Elementor and GutenVerse Addons). You can do this by visiting <strong>Appearance » Install Plugins</strong> inside wp dashboard.</p>
+        </div>
+        <h3 id="required">Required Plugins</h3>
+        <p>The following message may be visible after theme activation:</p>
+        <p><img src="images/00-save2.png" alt="img"></p>
+        <p>Go to <strong>Appearance » Install Plugins </strong> and install and activate following plugins:</p>
+        <ol>
+          <li><strong>Redux Framework</strong></li>
+          <li><strong>Elementor</strong>: after activation go to Elementor &gt; Settings and make basic setup of the plugin: <br>
+            <img alt="" src="images/required-01.png"> Save changes and that's it. You can edit any page in the page builder later.</li>
+          <li><strong>GutenVerse Addons</strong></li>
+        </ol>
+        <h3 id="setup">Default Setup</h3>
+        <p>1. <em>After theme activation go to Appearance &gt; Install Plugins, and install and <strong>activate Redux Framework plugin!</strong></em></p>
+        <p>2. Then go to GutenVerse - admin panel</p>
+        <p><img src="images/00-dashboard.png" alt="img"></p>
+        <p> and hit "Save Changes" button to set default style settings:</p>
+        <p><img src="images/00-save.png" alt="img"></p>
+        <p>You can change styling options  later.</p>
+        <p> </p>
+        <p>2. Following (or similar) message may be visible after theme activation:</p>
+        <p><img src="images/00-save2.png" alt="img"></p>
+        <p>Click on 'Begin activating plugins' link and install and   activate 'Redux Framework' (if not installed yet), Elementor and   'GutenVerse Addons' plugins. Or you can do this by visiting <strong>Appearance » Install Plugins</strong></p>
+        <p> </p>
+        <p>4. IMPORTANT! It is possible that after theme activation are   images wrongly cropped and look ugly! In this case use following plugin: <a href="http://wordpress.org/extend/plugins/regenerate-thumbnails/">http://wordpress.org/extend/plugins/regenerate-thumbnails/</a> to regenerate old thumbnails (from previous theme).<br>
+          After plugin installation start regeneration in Tools &gt; Regen. Thumbnails.            This process can take a while and you cannot close tab/window until regeneration is done. </p>
+        <p> </p>
+        <p> </p>
+        <p>&nbsp;</p>
+        <h3 id="homesetup">Homepage Setup</h3>
+        <ol>
+          <li>In 'Pages' section create new page &gt; name it 'Home' </li>
+          <li>Select '<strong>Elementor Full Width</strong>' template for this page and save the page:<br>
+            <img src="images/elementor-01.png" alt="img"></li>
+          <li>Go to Settings &gt; Reading and  created 'Home' page set as Static page &gt; Front page,<br>
+            <img src="images/elementor-02.png" alt="img"></li>
+          <li>Empty homepage is created now! In next steps, we'll create homepage content using 'Elementor' page builder.</li>
+        </ol>
+        
+      <p> </p>
+        
+        
+        <p> </p>
+        <h4 id="builder">Elementor
+
+</h4><p><strong>Important!</strong></p>
+      <div class="info">
+          <p> I recommend creating few classic blog posts  before you   start creating templates in Elementor. Set 'featured images' for   all your posts.</p>
+      </div>
+      
+        <ol>
+          <li>Go to Pages section and edit 'Home' page, which we have created in previous steps:
+            <br>
+            <img src="images/elementor-03.png" alt="img">
+          </li>
+
+          <li>Make sure that 'Elementor Full Width' template is selected for this page (a.), then hit 'Edit with Elementor' button (b.):
+            <br>
+            <img src="images/elementor-04.png" alt="img">
+          </li>
+          
+      </ol>
+          
+      <h4 id="builder-slider"><strong>Full Width Column</strong> - Adding Slider or Carousel</h4>
+            <ol>
+          
+          <li>Make sure that <strong>GutenVerse Addons</strong> plugin is installed.</li>
+          <li>In 'Elementor edit mode' hit on 'Add new section' button and add select 'one column' setion:
+            <br>
+            <img src="images/elementor-05.png" alt="img">
+            <br>
+            <img src="images/elementor-06.png" alt="img">          </li>
+
+
+
+
+
+                    <li>Hover over the section and click on 2nd blue icon to edit section (a.) In left section select 'Full Width' and 'No Gap' options (b.)<br>
+            <img src="images/elementor-07.png" alt="img"><br>
+            
+          </li>
+          
+          
+          <li>Then just click + sign and drag '<strong>Themnific: Slider</strong>' (or '<strong>Themnific: Carousel</strong>') block into setion.<br>
+            <img src="images/elementor-08.png" alt="img"></li>
+          <li>And that's it!
+            'Slider placeholder' will appear; on live homepage will be displayed fully functional slider.<br>
+            <img src="images/elementor-08a.png" alt="img">
+          </li>
+          
+      </ol>        
+
+<h4 id="builder-boxed">One 'Boxed' Column</h4>   
+
+
+
+      <ol>
+          
+          <li>In 'Elementor edit mode' hit on 'Add new section' button and add select 'one column' setion:
+            <br>
+            <img src="images/elementor-05.png" alt="img">
+            <br>
+            <img src="images/elementor-06.png" alt="img">          </li>
+
+
+
+
+
+                    <li>Hover over the section and click on 2nd blue icon to edit section (a.) In left section select 'Boxed' width with <strong>1440px</strong> and 'Wider' gap option (b.)<br>
+            <img src="images/elementor-09.png" alt="img"><br>
+            
+          </li>
+          
+          
+          <li>Then just click + sign and drag e.g. '<strong>Themnific: Magazine 1</strong>' block into setion.<br>
+            <img src="images/elementor-09a.png" alt="img"></li>
+          <li>Adjust widget options (title, number of posts or featured category) and save page.</li>
+          <li><em>Suitable blocks for 'boxed' single column are</em> <strong>Themnific: Magazine 1, Themnific: Magazine 2,Themnific: Magazine 3</strong><br>
+          </li>
+          
+      </ol>
+
+<h4 id="builder-columns">Adding Columns</h4>
+
+<ol>
+
+<li>In 'Elementor edit mode' hit on 'Add new section' button and select  'two columns' section: <br>
+            <img src="images/elementor-05.png" alt="img"><br>
+            <img src="images/elementor-10.png" alt="img"></li>
+<li>Using Drag&Drop resize columns to e.g. 68% (for wide column) and 32% (for narrow column): <br>
+            <img src="images/elementor-11.png" alt="img"></li>
+<li>Select <strong>Wider</strong> in the  'Columns Gap' option and 1380px boxed width.</li>
+<li>Click on the <strong>+</strong> sign in wide column and then drag blocks from the left menu; e.g. add '<strong>Themnific: Blog (for homepage)'</strong> block to this wide column: <br>
+  <img src="images/elementor-12.png" alt="img"></li>
+<li><strong>Adjust 'Number of posts' parameter</strong> and optionally select 'featured  category' in left panel.</li>
+<li>Click on the <strong>+</strong> sign in narrow column, then drag <strong>Sidebar</strong> block from the left menu into it.<br>
+  <img src="images/elementor-13.png" alt="img"></li>
+<li>Choose 'Sidebar' section which you can setup in Appearance &gt; Widgets<br>
+  <img src="images/elementor-10c.png" alt="img"><br>
+  </li>
+</ol>
+
+ 
+
+       <h4 id="builder-hero">Adding Hero image</h4>
+      <p>&nbsp;</p>
+        
+<ol>
+          <li>Add new section and add two column layout:<br>
+            <img src="images/elementor-05.png" alt="img"><br>
+            <img src="images/elementor-10.png" alt="img">
+          </li>
+          
+          
+          <li>Hover over the section and click on 2nd blue icon to edit section:<br>
+            <img src="images/elementor-14.png" alt="img"><br>
+          </li>
+          
+          <li>Switch to the <strong>Style</strong> tab (a.) and add background image (b.)<br>
+            <img src="images/elementor-15.png" alt="img"><br>
+            <img src="images/elementor-17.png" alt="img">
+          </li>
+          
+          
+      <li>Then just click on <strong>+</strong> sign in the left column and drag; e.g. <strong>Heading</strong>  block into it.<br><img src="images/elementor-18.png" alt="img">.<br>
+      </li>
+          
+      <li>Click on heading; and in Content / Style / Advanced tabs customize the appearance (size, text colors, font style, padding etc.). <br>
+            <img src="images/elementor-19.png" alt="img"><br>
+      <img src="images/elementor-18b.png" alt="img"><br>
+      </li>
+          
+          
+      <li>After all these, adjust overall padding (spacing) of the 'hero' section. <br>
+        a. edit section , <br>
+        b. switch to the <strong>Advanced</strong> tab,<br>
+        c. adjust top and bottom padding of the section.<br>
+            <img src="images/elementor-20.png" alt="img"><br>
+      </li>
+</ol>
+        
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        
+
+        <h4 id="blog">Blog Template</h4>
+        <ol>
+          <li>If you want to create <strong>News</strong> (or Blog) page, create empty page (Default template),</li>
+          <li>name it News (or Blog),</li>
+          <li> go to Settings &gt; Reading and set this page as 'Post page',</li>
+          <li>adjust number of posts.<br>
+            <img src="images/blog.png" alt="img"></li>
+        </ol>
+        <p> </p>
+        <p>&nbsp;</p>
+      <h3 id="themesetup">Theme Setup - Admin panel</h3>
+      <p><img src="images/00-dashboard.png" alt="img"></p>
+      <p>Theme comes with extensive options panel with functions divided to these sections: </p>
+      <p><img src="images/admin-01-menu.png" alt="img"></p>
+      <h6>General Settings:</h6>
+      <ol>
+        <li>Upload your Main logo image,</li>
+        <li>Choose blog layout for blog page and archives,</li>
+        <li>Enable/disable 'Uppercase' fonts,</li>
+        <li>Enable/disable 'Additional Letter Space'.</li>
+      </ol>
+      <p><img src="images/admin-general.png" alt="img"></p>
+      <p> </p>
+      <h6>Primary styling:</h6>
+      <ol>
+        <li>Select  font family (with color, style and width) for main body text,</li>
+        <li>Choose colors for typographic elements: body, wrapper, containers (ghost color), text/links, hover, borders etc.</li>
+      </ol>
+      <p><img src="images/admin-styling.png" alt="img"></p>
+      <p> </p>
+      <h6>Header Styling &amp; Settings:</h6>
+      <ol>
+        <li>Selact type of the header,</li>
+        <li>Setup color scheme (background, font, links and border colors)  for header,</li>
+        <li>Set other colors for  header elements (sub-menus etc.),</li>
+        <li>Set custom margins and width limitation for logo image.</li>
+      </ol>
+      <p><img src="images/admin-styling2.png" alt="img"></p>
+      <p> </p>
+      <h6>Footer  Styling:</h6>
+      <ol>
+        <li>Setup footer logo and footer text.</li>
+        <li>Select color scheme for footer (footer background,  text, links,  hover, borders etc.)</li>
+      </ol>
+      <p><img src="images/admin-styling3.png" alt="img"></p>
+      <p> </p>
+      <h6>Other Styling:</h6>
+      <ol>
+        <li>Set font styling for 'Meta' sections (date, category etc. post information)</li>
+        <li>Choose background color for elements (buttons, lines etc.),</li>
+        <li>Select text/link color for elements (buttons, lines etc.),</li>
+        <li>Set color scheme for image backgrounds.</li>
+      </ol>
+      <p><img src="images/admin-styling4.png" alt="img"></p>
+      <p> </p>
+      <p> </p>
+      <h6>Headings Typography:</h6>
+      <ol>
+        <li>Select Font-family for all headings (h1- h6) and 'post titles',</li>
+        <li>Select font weight for all headings (h1- h6) and 'post titles',</li>
+        <li>Select Font-size for all headings (h1- h6) and 'post titles',</li>
+        <li>Select font color for all headings (h1- h6) and 'post titles',</li>
+      </ol>
+      <p><img src="images/admin-typo.png" alt="img"></p>
+      <p> </p>
+      <h6>Post Settings:</h6>
+      <ol>
+        <li>Turn On/Off partial post sections.</li>
+      </ol>
+      <p><img src="images/admin-post-settings.png" alt="img"></p>
+      <h6>Social Networks Settings:</h6>
+      <ol>
+        <li>Enable &quot;Social Networks&quot; section,</li>
+        <li>Enter the full URL of social network, your  profile or account (enter full URL: http:// or https:// including).</li>
+      </ol>
+      <p><img src="images/admin-social.png" alt="img"></p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      
+      
+      <h2>If you are finished click on "Save changes" button!</h2>
+      <h6> </h6>
+      <p>&nbsp;</p>
+      <h3 id="templates">Custom Templates (for Posts and Pages)</h3>
+      <p> </p>
+      <ol>
+        <li>Create a page or a post.</li>
+        <li>In Page Attributes (Post Attributes) section select custom  template ('No Sidebar Layout', 'Right Sidebar Layout' etc.)</li>
+        <li>Click the Publish button to publish your page/post.</li>
+      </ol>
+      <p> </p>
+      <h3 id="formats">Post Settings</h3>
+      <p>In post add/edit post screen, below the post content is located custom 'Themnific Post Options' tab: </p>
+      <p><img src="images/post-settings.png" alt="doc"></p>
+      <p>a) You can select the <strong>Image + Title layout</strong> on the single post,</p>
+      <p>b) Enable / Disable featured image on the single post (for 'Classic Image' only).</p>
+      <p>  </p>
+      <p>  </p>
+      <h3 id="widgets">Custom Widgets</h3>
+      <p>Go to Appearance &gt; Widgets and setup your sidebar and   footer widget areas. Widgets are very easy to setup.      </p>
+      <p>Following widgets are used in theme demo:</p>
+      <p><img src="images/widgets2.png" alt="img"></p>
+      <p>In theme demo may be used  custom widgets which come with 3dr party plugins (Top 10 plugin,  Newsletter etc.). <br>
+        Please see 'Plugins' chapter for more info about these plugins.</p>
+      <p> </p>
+      <p>&nbsp;</p>
+      <h3 id="images">Images</h3>
+      <p>IMPORTANT! It is possible that after theme activation are images wrongly cropped and look ugly!</p>
+      <p>In this case use this plugin: <a target="_blank" href="http://wordpress.org/extend/plugins/regenerate-thumbnails/">http://wordpress.org/extend/plugins/regenerate-thumbnails/</a> to regenerate old thumbnails from previous theme. <br>
+        After plugin installation start regeneration in Tools &gt;   Regen. Thumbnails This process can take a while and you cannot close   tab/window until regeneration is done. </p>
+      <p> <strong>Images and thumbnails are generated automatically.</strong> </p>
+      <p>To display thumbnails correctly upload images via WP interface using &quot;<strong>Set featured image</strong>&quot; button.<br>
+        After image upload set featured image.</p>
+      <p>&nbsp;</p>
+      <h6>Featured Images - Minimal Sizes</h6>
+      <ol>
+        <li>Main Slider section: 995x770px;</li>
+        <li>Magazine widgets: 630x650px;</li>
+        <li>Single post (Hero + Big Cover Image): 1600x770px;</li>
+        <li>Single post (Classic Image): 862x525px;</li>
+        <li>Blog template: 878x700px;</li>
+      </ol>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+
+      <h3 id="custom-menu">Custom Menu :</h3>
+      <p> </p>
+      <p><strong>! Create own custom menus first! <a href="http://codex.wordpress.org/WordPress_Menu_User_Guide" target="_blank">Please see following tutorial</a> !</strong></p>
+      <p>&nbsp;</p>
+      
+  
+      <h6>Colored Menu Item (on the right)</h6>
+      
+      <p>1. Toggle 'Screen Options' on the top of the menu screen: <br>
+        <img alt="" src="http://capethemes.com/docs/association/images/custom-menu-03a.png"></p>
+      <p>2. <strong>Enable 'CSS Classes'  option:</strong><br>
+        <img alt="" src="images/custom-menu-03b.png"></p>
+      <p>3. Toggle any menu item and type <strong>special</strong> word into 'CSS Classes' field<br>
+        <img alt="" src="images/custom-menu-03c.png"></p>
+      <p><br>
+      </p>
+      <p>&nbsp;</p>
+    
+    
+    
+      <h6>Menu Icons</h6>
+      <p> </p>
+      <p>1. Before (or after) menu label add this piece of code </p>
+      <pre>&lt;i class="fas XXX"&gt;&lt;/i&gt;</pre>
+      <p>Enter full icon code - 'fa' class is required.</p>
+      <p> <img alt="" src="http://capethemes.com/docs/association/images/custom-menu-02.png"></p>
+      <p>2. For XXX you can set any icon name. You can find all icon names on <a href="http://fortawesome.github.io/Font-Awesome/icons/" target="_blank">Font Awesome homepage</a>.</p>
+      <p>3. You can see how-to video <a href="http://www.youtube.com/watch?v=-mxtT2Tw0VE" target="_blank">here</a>. It is not tutorial for my theme but the process is the same.</p>
+      <p>&nbsp;</p>
+      <h3 id="plugins">Plugins</h3>
+      <p> </p>
+      <h6>Elementor</h6>
+      <p>Elementor plugin will help you create  awesome layouts for your pages.</p>
+      <p>Go to <strong>Appearance » Install Plugins</strong> inside wp dashboard and install and activate Elementor plugin. </p>
+      <p>Basic setup of this plugin is very easy; go to Elementor &gt; Settings and disable default color and fonts:</p>
+      
+      <p> <img alt="" src="images/plug-10.png"></p>
+      <p>Save changes and that's it. You can edit any page in the page builder now.</p>
+      <p>&nbsp;</p>
+   
+
+      <p> </p>   
+      
+      
+      <p>&nbsp;</p>
+
+
+      <h6>MailChimp for WordPress</h6>
+      <p>You can easily create newsletter subscribe form with 'MailChimp for WordPress' Plugin: <a href="https://wordpress.org/plugins/mailchimp-for-wp/">Plugin Homepage</a></p>
+      <p>Into search field (in Plugins &gt; Add New) paste <code>MailChimp for WordPress</code> and Install this plugin</p>
+      <p>Plugin can be set in MailChimp for WP section:</p>
+      <p> <img alt="" src="images/mb-plug-01.png"></p>
+      <p>In demo is used subscribe form with following markup: <a href="https://pastebin.com/bM7T51rY">https://pastebin.com/bM7T51rY</a></p>
+      <p> </p>
+      <h6>Top 10 – Popular posts plugin for WordPress </h6>
+      <p>Into search field (in Plugins &gt; Add New) paste 'Top 10 –   Popular posts plugin for WordPress' and Install and activate this   plugin.</p>
+      <p>After plugin activation setup 'Popular Posts [Top 10]' widget in Appearance &gt; Widgets with following, highlighted options:</p>
+      <p> <img alt="" src="images/plug-04.png"></p>
+      <p> </p>
+      <p>&nbsp;</p>      
+      
+      <h6>Recent Tweets Widget</h6>
+      <p>Theme is compatible with <a target="_blank" href="https://wordpress.org/plugins/recent-tweets-widget/">Recent Tweets Widget plugin</a>. Plugin is used in demo site.</p>
+      <p>In search field (Plugins &gt; Add New) insert 'Recent Tweets Widget' and Install plugin.</p>
+      <p>Plugin widget can be set in Appearance &gt; Widegts:</p>
+      <p>Note!: You need to get "consumer and secret" codes for Recent Tweets Widget:</p>
+      <ol>
+        <li>Go to <a target="_blank" href="https://dev.twitter.com/apps/">https://dev.twitter.com/apps/</a>new and log in, if necessary</li>
+        <li>Enter your Application Name, Description and your website address. You can leave the callback URL empty.</li>
+        <li>Accept the TOS, and solve the CAPTCHA.</li>
+        <li>Submit the form by clicking the Create your Twitter Application</li>
+        <li>Copy the consumer key (API key) and consumer secret from the screen into widget fields</li>
+      </ol>
+      <p> </p>
+
+      <p>&nbsp;</p>
+
+
+      
+      <h6>Social Pug</h6>
+      <p>Plugin page: <a href="https://wordpress.org/plugins/social-pug/">Plugin Homepage</a></p>
+      <p>Into search field (in Plugins &gt; Add New) insert 'Social Pug' and Install this plugin.</p>
+      <p>Plugin can be set in dashboard &gt; Social Pug:</p>
+      <p><img alt="" src="images/plug-02.png"></p>
+      <p>Theme is compatible with <a target="_blank" href="https://wordpress.org/plugins/add-to-any/">AddToAny Share Buttons</a> too.</p>
+      
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      
+
+
+      <h6>Contact Form 7</h6>
+      <p>Plugin page: <a href="https://wordpress.org/plugins/contact-form-7/">Plugin Homepage</a></p>
+      <p>Into search field (in Plugins &gt; Add New) insert 'Contact Form 7' and Install this plugin</p>
+      <p>You can create own contact form(s) in main wp menu &gt; Contact. </p>
+      <p>You can display created 'contact form' on any page using shortcode. </p>
+      <p><strong>On demo page is used contact form with following markup: <a href="https://pastebin.com/a0Hcywkd" target="_blank">https://pastebin.com/a0Hcywkd</a></strong></p>
+      <p>Please read <a href="http://contactform7.com/docs/" target="_blank">plugin documentation</a> for more info about this very flexible plugin.</p>
+      <p>&nbsp;</p>
+      
+      <h3>Other Recommended Plugins</h3>
+      
+      <p>&nbsp;</p>
+      
+      <h4><a href="https://wordpress.org/plugins/autoptimize/" target="_blank">Autoptimize →</a></h4>
+      
+      
+      <h4><a href="https://wordpress.org/plugins/wp-smushit/" target="_blank">Smush →</a></h4>
+      
+      
+      <h4><a href="https://wordpress.org/plugins/fitvids-for-wordpress/" target="_blank">FitVids for WordPress →</a></h4>
+      
+      
+      <h4><a href="https://wordpress.org/plugins/wp-featherlight/" target="_blank">WP Featherlight →</a></h4>
+      
+      
+      <h4><a href="https://wordpress.org/plugins/mystickysidebar/" target="_blank">WP Sticky Sidebar →</a></h4>
+      
+      <p> </p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      
+      
+
+      <p>       </p>
+      <h3 id="xml">Demo Import (XML file)</h3>
+      <p> </p>
+      <div class="warning">
+        <p>Make sure that <strong>GutenVerse</strong> theme, <strong>Elementor</strong> and <strong>GutenVerse Addons</strong> plugins are installed and activated before demo import.      </p>
+      </div>
+      <h4>One Click Demo Import</h4>
+      <p>Install and activate '	
+One Click Demo Import' plugin.</p>
+      <p>After that  import full demo content easily in <strong>Appearance &gt; Import Demo Data</strong>.</p>
+      <!--<img src="images/import.png" alt="img">-->
+      <p>Just hit 'Import Demo Data' and wait until import is done.</p>
+      <p> </p>
+      <p>&nbsp;</p>
+      <h4>Manual import via XML file      </h4>
+      <p>- In main theme package  is attached XML file. Unzip this XML file.</p>
+      <p>- Go to Tools &gt; Import;  install and activate 'WordPress Importer' plugin, </p>
+      <p>- Find XML file on your computer and import XML file. </p>
+      <p>- <strong>Check "Download and import file attachments" option.</strong></p>
+      <p>- XML file is bit bigger and sometimes (slow server etc.) needs to be imported more times (<em>until 'Have Fun' message is shown</em>).</p>
+      <p> </p>
+      <p><strong>After XML file import</strong>:</p>
+      <p>-  set imported 'Home' page as static front page in  Settings &gt; Reading; <br>
+      <img src="images/import-01.png" alt="img"></p>
+      
+      <p>- save imported custom menus for 'theme locations' (in Appearance &gt; Menus);</p>
+      <p>- footer and sidebar widgets can be set in Appearance &gt; Widgets. In demo are used these widgets:</p>
+      <p><img src="images/widgets2.png" alt="img"></p>
+      <p>- edit 'Home' page layout in Elementor edit mode: <br>
+      </p>
+      <p>- set own color scheme in Appearance &gt; GutenVerse admin panel.</p>
+      <p>&nbsp;</p>
+      <p> </p>
+      <h6>Elementor templates</h6>
+      <p>If you don't want to import whole demo content you can import just elementor templates (e.g. layout of the homepage) using .json file.</p>
+      <p><strong>.json files are located in main theme package, in 'spec' folder.</strong> Extract .json files to you computer. </p>
+      <p><img src="images/import-04.png" alt="img"></p>
+      <p>Extract .json files to you computer. </p>
+      <p>Import template when you are editing any page in Elementor - &gt; click on 'Add Template' button &gt; Import Template:</p>
+      <p><img src="images/import-03.png" alt="img"></p>
+      <p>Find .json file on your computer and import Elementor template. </p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <h6>Important! </h6>
+      <p><strong>Due licenses all imported images are for testing purposes only and cannot be used on your live website!!!</strong></p>
+      <p>You can download free photos for your commercial &amp; personal works on sites like:</p>
+      <p>http://picjumbo.com/</p>
+      <p>http://pixabay.com/</p>
+      <p>https://unsplash.com/grid</p>
+      <p> </p>
+      <h3 id="translation">Translation</h3>
+      <p> This theme is translation/localization ready and comes with <code>gutenverse.pot</code> file. File is located in <code>../gutenverse/lang/</code> folder. </p>
+      <ol>
+        <li>You need to use localized WordPress installation (core) in the first place:<br>
+          <img src="http://www.capethemes.com/docs/wilco/images/translation.png" alt="img"><br>
+          If not, localization will be not successful.</li>
+        <li>.pot file is located in root theme folder inside 'lang' sub-folder: <code>../gutenverse/lang/</code></li>
+        <li>Download <strong>poedit</strong> software <a href="http://www.poedit.net/download.php">here,</a></li>
+        <li>Install software it and   translate <code>gutenverse.pot</code> file (line by line),</li>
+        <li>Once you have translated all the strings, you can save this as your .po file.
+          <p><strong>The filename of your .po / .mo file is crucial!</strong> Gettext uses the ISO 639   standard for language abbreviations and ISO         3166 for locales. If your   translation is written in Deutsch  for         example, your file name   will look like <strong>de_DE.po</strong>. Capitalization is     also important here. For a full list of language and country codes,     check out these two links:</p>
+          <ul>
+            <li><a href="http://www.gnu.org/software/gettext/manual/gettext.html#Language-Codes" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','www.gnu.org']);">Gettext language codes</a></li>
+            <li><a href="http://www.gnu.org/software/gettext/manual/gettext.html#Country-Codes" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','www.gnu.org']);">Gettext country codes</a></li>
+          </ul>
+          <p>Once   you save, POEdit by default automatically   creates a       .mo file alongside   your .po file. Put these files into   'lang'     folder.</p>
+        </li>
+        <li>Access your <strong>wp-config.php</strong> file found in your WordPress' root folder. Your file should already contain <strong>define('WPLANG', '');</strong> but if it does not, you can add it in. You simply need to add your         language and locale code into the define. If you were to translate   your       theme into German, you would have this:<br>
+          <code>define('WPLANG', 'de_DE');</code></li>
+      </ol>
+      <p>Your internationalization is complete!</p>
+      <p> </p>
+      <p> </p>
+      <p> </p>
+      <p> </p>
+      <hr>
+      <p>Once again, thank you so much for purchasing this theme.</p>
+      <p><a href="#container">Go To Table of Contents</a></p>
+      <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+    
+    
+    </div><!-- end div .container_inn -->
+
+</div><!-- end div .container -->
+</body>
+</html>
